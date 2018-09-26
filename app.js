@@ -15,6 +15,7 @@ const MongoClient = require('mongodb').MongoClient
 /*/
 var db_credentials = process.env.MONGODB_CREDENTIALS
 var db
+console.log('connecting to mongodb...');
 
 MongoClient.connect(db_credentials, (err, database) => {
   // ... start the server
